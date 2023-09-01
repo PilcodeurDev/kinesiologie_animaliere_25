@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div>
-      <h1>voici la reponce du notre requete:</h1>
+      <h1>voici la reponce de notre requete:</h1>
       {
         data.map((response, id) => {
           return <p key={id}>{response.email}</p>
