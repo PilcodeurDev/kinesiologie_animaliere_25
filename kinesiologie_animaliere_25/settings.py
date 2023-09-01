@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'tailwind',
     'theme',
-    'frontend.apps.FrontendConfig'
+    'frontend',
 ]
 
 MIDDLEWARE = [
