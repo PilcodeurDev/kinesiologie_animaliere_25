@@ -1,25 +1,13 @@
-import { useEffect, useState } from "react"
-import Axios from "axios"
-
+import "./css/Home.css";
 
 export default function Home() {
-
-  const [ data, setData ] = useState([])
-
-  useEffect(() => {
-    Axios.get("https://reqres.in/api/users?page=2")
-    .then(res => setData(res.data.data))
-    .catch(err => console.log(err));
-  }, []);
-
   return (
-    <div>
-      <h1>voici la reponce de notre requete:</h1>
-      {
-        data.map((response, id) => {
-          return <p key={id}>{response.email}</p>
-        })
-      }
+    <div className="container">
+      {/* Navbar  */}
+      <div className="banner">
+        <h1>Kinésiologie Animalière 25</h1>
+      </div>
+      {/* Footer  */}
     </div>
-  )
+  );
 }
