@@ -19,3 +19,13 @@
   font-size: 5rem;
   color: white;
 }
+
+.bulle {
+  height: 415px;
+  /* background: #347e70; */
+  color: white;
+
+  h2 {
+    margin-left: 100px;
+  }
+}
