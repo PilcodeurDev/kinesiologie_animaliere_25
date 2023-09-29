@@ -5,7 +5,7 @@
 
   height: 500px;
   margin-top: 100px;
-  margin-bottom: 400px;
+  margin-bottom: 350px;
 }
 
 .banner h1 {
@@ -23,4 +23,34 @@
   width: 1100px;
   height: 1000px;
   border-radius: 50%;
+}
+
+.border-linear-gradient {
+  background: linear-gradient(135deg, #ff2222 0% 50%, #e5710b44);
+}
+
+.word_bg {
+  background: #1f2937;
+}
+
+.word {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(60deg, #ff0404, #e5710b44);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.words-slide {
+  white-space: nowrap;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-247%);
+  }
 }
