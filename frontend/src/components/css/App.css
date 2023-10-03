@@ -30,6 +30,8 @@ h2 {
 
 h3 {
   font-family: roboto_slab;
+  font-size: 1.875rem;
+  letter-spacing: 0.05em;
 }
 
 @font-face {

@@ -33,10 +33,10 @@ export default function Home() {
           <div className="bg-teal-600 rounded-3xl relative h-96 w-10/12 -left-10 overflow-hidden z-0">
             <div className="circle bg-teal-700 absolute z-0 -left-96 -top-[850px]"></div>
             <div className=" w-3/4 border-red-700">
-              <h2 className="flex  py-12 relative z-10">
+              <h3 className="flex py-12 relative z-10">
                 La kinésiologie animalière
-              </h2>
-              <div className="pl-12 ml-48">
+              </h3>
+              <div className="pl-12 ml-48 text-xl">
                 Retrouver l'harmonie intérieure de votre animal grâce à la
                 libération émotionelle en profondeur.
               </div>
@@ -57,8 +57,8 @@ export default function Home() {
           </div>
           {/* 2eme box */}
           <div className=" bg-gray-800 rounded-3xl relative h-60 w-10/12 left-20 -top-24 overflow-hidden z-10">
-            <h2 className=" px-14 pt-6 relative ">TRAVAIL</h2>
-            <h2 className=" px-14 pb-8 relative ">SUR</h2>
+            <h3 className="px-14 pt-6 relative ">TRAVAIL</h3>
+            <h3 className="px-14 pb-8 relative ">SUR</h3>
             {/* animation caroussel */}
             <div className="flex words-slide">
               {data.map((probleme) => (
