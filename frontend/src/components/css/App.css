@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background: #1c1e22;
+  color: #ffffff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  margin-bottom: 14px;
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: alexBrush;
+  src: url(../../../public/assets/AlexBrush-Regular.ttf);
+}
