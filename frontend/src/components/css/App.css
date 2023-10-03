@@ -11,10 +11,13 @@
 body {
   background: #1c1e22;
   color: #ffffff;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: roboto;
 }
 
+section {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
 h1 {
   margin-bottom: 14px;
   font-size: 5rem;
@@ -25,7 +28,34 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-family: roboto_slab;
+}
+
 @font-face {
   font-family: alexBrush;
   src: url(../../../public/assets/AlexBrush-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../../../public/assets/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url(../../../public/assets/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: roboto_slab;
+  src: url(../../../public/assets/RobotoSlab-Regular.ttf);
+}
+
+.bg-grey {
+  background-color: #1c1e22;
+}
+
+.font-bold {
+  font-family: roboto-bold;
 }
