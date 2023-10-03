@@ -14,7 +14,7 @@ export default function Home() {
     { word: "aboiement" },
     { word: "tristesse" },
     { word: "fatigue" },
-    { word: "surprotection" },
+    { word: "protection" },
   ];
 
   return (
@@ -55,8 +55,8 @@ export default function Home() {
           </div>
           {/* 2eme box */}
           <div className=" bg-gray-800 rounded-3xl relative h-60 left-20 -top-24 overflow-hidden z-10">
-            <h2 className=" px-14 pt-6 relative ">travail</h2>
-            <h2 className=" px-14 pb-8 relative ">sur</h2>
+            <h2 className=" px-14 pt-6 relative ">TRAVAIL</h2>
+            <h2 className=" px-14 pb-8 relative ">SUR</h2>
             {/* animation caroussel */}
             <div className="flex words-slide">
               {data.map((probleme) => (

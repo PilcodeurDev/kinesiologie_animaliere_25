@@ -26,7 +26,7 @@
 }
 
 .border-linear-gradient {
-  background: linear-gradient(135deg, #ff2222 0% 50%, #e5710b44);
+  background: linear-gradient(135deg, #ff2222 0% 50%, #ed8b02e6);
 }
 
 .word_bg {
@@ -36,14 +36,14 @@
 .word {
   font-size: 1.5rem;
   font-weight: bold;
-  background: -webkit-linear-gradient(60deg, #ff0404, #e5710b44);
+  background: -webkit-linear-gradient(60deg, #ff0404, #ed8b02e6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .words-slide {
   white-space: nowrap;
-  animation: slide 20s linear infinite;
+  animation: slide 18s linear infinite;
 }
 
 @keyframes slide {
@@ -51,6 +51,6 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-247%);
+    transform: translateX(-118%);
   }
 }
