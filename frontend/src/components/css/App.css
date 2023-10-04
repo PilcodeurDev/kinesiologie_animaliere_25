@@ -36,22 +36,22 @@ h3 {
 
 @font-face {
   font-family: alexBrush;
-  src: url(../../../public/assets/AlexBrush-Regular.ttf);
+  src: url(../../../public/assets/font-family/AlexBrush-Regular.ttf);
 }
 
 @font-face {
   font-family: roboto;
-  src: url(../../../public/assets/Roboto-Regular.ttf);
+  src: url(../../../public/assets/font-family/Roboto-Regular.ttf);
 }
 
 @font-face {
   font-family: roboto-bold;
-  src: url(../../../public/assets/Roboto-Bold.ttf);
+  src: url(../../../public/assets/font-family/Roboto-Bold.ttf);
 }
 
 @font-face {
   font-family: roboto_slab;
-  src: url(../../../public/assets/RobotoSlab-Regular.ttf);
+  src: url(../../../public/assets/font-family/RobotoSlab-Regular.ttf);
 }
 
 .bg-grey {

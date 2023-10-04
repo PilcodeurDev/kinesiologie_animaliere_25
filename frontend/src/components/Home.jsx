@@ -3,6 +3,7 @@ import alix from "../assets/alix_cheval.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import ElementArray from "./ElementArray";
 
 export default function Home() {
   const negativeWorlds = [
@@ -15,44 +16,6 @@ export default function Home() {
     { word: "tristesse" },
     { word: "fatigue" },
     { word: "protection" },
-  ];
-
-  const elements = [
-    {
-      name: "air",
-      texte:
-        "Le Chien AIR aime la collectivité, la vie à plusieurs, le travail d'équipe. Il sait s'adapter à tout interlocuteur et trouver le juste partenaire, que ce soit dans le domaine amoureux ou professionnel. Hélas, il dépend un peu trop de l'autre pour exister. Il peut avoir une certaine sensibilité artistique.",
-      bgImgName: "",
-      bgImgTexte: "",
-    },
-    {
-      name: "feu",
-      texte:
-        "Le Chien de FEU brille par son élégance. Il aime plaire. Mais attention, il est prêt à montrer les crocs s'il rencontre une personne mal intentionnée. Il est animé par un besoin d'idéal et rêve d'une société plus juste, plus égalitaire. Toujours affable, il sait charmer son entourage. On apprécie sa présence et ses conversations.",
-      bgImgName: "",
-      bgImgTexte: "",
-    },
-    {
-      name: "terre",
-      texte:
-        "Le Chien TERRE est un pragmatique. A quoi bon les belles paroles si les actes ne suivent pas ! Ses conseils sont toujours pertinents. Et pour cause, il tourne toujours sept fois sa langue dans sa gueule avant de s'exprimer. Sa sagesse lui permet de fédérer, de rassembler des personnes aux profils pourtant bien différents. Avec son compagnon de vie, il peut se montrer très exigeant.",
-      bgImgName: "",
-      bgImgTexte: "",
-    },
-    {
-      name: "métal",
-      texte:
-        "Le Chien  METAL est, parmi les Chiens, le plus agressif. Il peut employer la manière forte pour obtenir gain de cause. Ses ennemis le savent et évitent de le provoquer. Mais avec celles et ceux qu'il aime, il sait être disponible et se plier en quatre si le besoin se fait ressentir. Il est peut-être un peu trop sérieux. Avec l'expérience, il apprend à devenir plus léger.",
-      bgImgName: "",
-      bgImgTexte: "",
-    },
-    {
-      name: "eau",
-      texte:
-        "Le Chien EAU a l'art de cerner la psychologie humaine. Très observateur, il comprend très vite à qui il a affaire. Cette qualité l'amène à être très tolérant avec ses semblables. Cultivé, aimant les idées novatrices, il est très apprécié dans son travail. En amour, il peut être infidèle. Mais puisqu'il connaît le fonctionnement des Hommes et leurs faiblesses, il se refuse à toute culpabilité.",
-      bgImgName: "",
-      bgImgTexte: "",
-    },
   ];
 
   return (
@@ -170,40 +133,7 @@ export default function Home() {
       {/* 4eme section: element de votre animal */}
       <section>
         <h3>L'élément de votre chien</h3>
-        <div className="grid grid-cols-2 pt-20">
-          <div className="relative flex flex-col w-full h-80">
-            <div className="  basis-1/5  w-full flex items-center">
-              <p className=" absolute left-5 text-4xl">
-                {elements[0].name.toUpperCase()}{" "}
-              </p>
-            </div>
-            <div className="basis-1/5  w-full flex items-center">
-              <p className=" absolute left-5 text-4xl">
-                {elements[1].name.toUpperCase()}
-              </p>
-            </div>
-            <div className="basis-1/5  w-full flex items-center">
-              <p className=" absolute left-5 text-4xl">
-                {elements[2].name.toUpperCase()}
-              </p>
-            </div>
-            <div className="basis-1/5  w-full flex items-center">
-              <p className=" absolute left-5 text-4xl">
-                {elements[3].name.toUpperCase()}
-              </p>
-            </div>
-            <div className="basis-1/5  w-full flex items-center">
-              <p className=" absolute left-5 text-4xl">
-                {elements[4].name.toUpperCase()}
-              </p>
-            </div>
-          </div>
-          <div className="w-full ">
-            <div className="w-[80%] pt-16 text-base/7">
-              <p>{elements[0].texte}</p>
-            </div>
-          </div>
-        </div>
+        <ElementArray />
       </section>
       {/* Footer  */}
     </div>
