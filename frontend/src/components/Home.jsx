@@ -3,9 +3,10 @@ import alix from "../assets/alix_cheval.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import ElementArray from "./ElementArray";
 
 export default function Home() {
-  const data = [
+  const negativeWorlds = [
     { word: "anxiété" },
     { word: "réactivité" },
     { word: "peur" },
@@ -61,7 +62,7 @@ export default function Home() {
             <h3 className="px-14 pb-8 relative ">SUR</h3>
             {/* animation caroussel */}
             <div className="flex words-slide">
-              {data.map((probleme) => (
+              {negativeWorlds.map((probleme) => (
                 <span
                   key="probleme.id"
                   className="border-linear-gradient p-[2px] mx-1 rounded-xl"
@@ -71,7 +72,7 @@ export default function Home() {
                   </div>
                 </span>
               ))}
-              {data.map((probleme) => (
+              {negativeWorlds.map((probleme) => (
                 <span
                   key="probleme.id"
                   className="border-linear-gradient p-[2px] mx-1 rounded-xl"
@@ -128,6 +129,11 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+      {/* 4eme section: element de votre animal */}
+      <section>
+        <h3>L'élément de votre chien</h3>
+        <ElementArray />
       </section>
       {/* Footer  */}
     </div>
