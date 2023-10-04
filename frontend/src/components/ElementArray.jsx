@@ -18,7 +18,7 @@ function ElementArray() {
     {
       name: "feu",
       texte:
-        "Le Chien de FEU brille par son élégance. Il aime plaire. Mais attention, il est prêt à montrer les crocs s'il rencontre une personne mal intentionnée. Il est animé par un besoin d'idéal et rêve d'une société plus juste, plus égalitaire. Toujours affable, il sait charmer son entourage. On apprécie sa présence et ses conversations.",
+        "Le Chien FEU brille par son élégance. Il aime plaire. Mais attention, il est prêt à montrer les crocs s'il rencontre une personne mal intentionnée. Il est animé par un besoin d'idéal et rêve d'une société plus juste, plus égalitaire. Toujours affable, il sait charmer son entourage. On apprécie sa présence et ses conversations.",
       bgImgTitle: bg_feu,
       bgImgTexte: "",
     },
@@ -32,7 +32,7 @@ function ElementArray() {
     {
       name: "métal",
       texte:
-        "Le Chien  METAL est, parmi les Chiens, le plus agressif. Il peut employer la manière forte pour obtenir gain de cause. Ses ennemis le savent et évitent de le provoquer. Mais avec celles et ceux qu'il aime, il sait être disponible et se plier en quatre si le besoin se fait ressentir. Il est peut-être un peu trop sérieux. Avec l'expérience, il apprend à devenir plus léger.",
+        "Le Chien METAL est, parmi les Chiens, le plus agressif. Il peut employer la manière forte pour obtenir gain de cause. Ses ennemis le savent et évitent de le provoquer. Mais avec celles et ceux qu'il aime, il sait être disponible et se plier en quatre si le besoin se fait ressentir. Il est peut-être un peu trop sérieux. Avec l'expérience, il apprend à devenir plus léger.",
       bgImgTitle: bg_metal,
       bgImgTexte: "",
     },
@@ -52,8 +52,8 @@ function ElementArray() {
   const handleMouseOut = () => setHoveredElementIndex(null);
 
   return (
-    <div className="grid grid-cols-2 pt-20">
-      <div className="relative flex flex-col w-full h-[500px] ">
+    <div className="grid grid-cols-2 mt-20 h-[500px]">
+      <div className="relative flex flex-col w-full">
         {elements.map((element, index) => (
           <div
             className="basis-1/5 w-full flex items-center"
@@ -74,13 +74,13 @@ function ElementArray() {
           </div>
         ))}
       </div>
-      <div className="w-full">
-        <div className=" w-[80%] pt-8 text-base/7 ">
-          {hoveredElementIndex !== null && (
+      {hoveredElementIndex !== null && (
+        <div className="w-full bg-slate-900">
+          <div className=" pt-24 w-[80%] text-base/9 ">
             <p>{elements[hoveredElementIndex].texte}</p>
-          )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
