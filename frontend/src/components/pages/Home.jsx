@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import ElementArray from "../ElementArray";
+import NavbarDefault from "../NavbarDefault";
 
 export default function Home() {
   const negativeWorlds = [
@@ -21,24 +22,7 @@ export default function Home() {
 
   return (
     <div>
-      {/* Navbar  */}
-      <header className="w-full h-20 bg-slate-500 flex justify-between">
-        <div className="flex">
-          <Link to="/">KA_25</Link>
-        </div>
-        <div className="flex">
-          <div className="flex items-center px-3">
-            <p className="px-3">La Kinésiologie</p>
-            <p className="px-3">Qui Suis-Je</p>
-            <p className="px-3">Réservation</p>
-            <p className="px-3">Quizz</p>
-            <p className="px-3">Blog</p>
-          </div>
-          <button>
-            <Link to="/">Se Connecter</Link>
-          </button>
-        </div>
-      </header>
+      <NavbarDefault />
       <div className="container mx-auto px-24">
         {/*  1er section : La banner */}
         <section>
@@ -113,7 +97,7 @@ export default function Home() {
                 <img src={alix} alt="alix" className="" />
               </div>
               <div className=" mr-48">
-                <div className="relative z-50 bg-gray">
+                <div className="relative z-10 bg-gray">
                   <h3 className="sub-title pt-8 pb-4">SUR MOI</h3>
                   <h3 className="text-3xl pb-4 w-[275px] tracking-wider ">
                     PLUS DE 12 ANS D'EXPÉRIENCE À TRAVERS UNE GAMME DIVERSIFIÉE

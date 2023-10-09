@@ -6,7 +6,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 
@@ -62,4 +62,10 @@ h3 {
 
 .font-bold {
   font-family: roboto-bold;
+}
+
+.lien {
+  font-style: italic;
+  color: rgb(30, 95, 218);
+  text-decoration: underline;
 }
