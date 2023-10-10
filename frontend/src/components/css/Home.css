@@ -49,7 +49,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-118%);
+    transform: translateX(-100%);
   }
 }
 
