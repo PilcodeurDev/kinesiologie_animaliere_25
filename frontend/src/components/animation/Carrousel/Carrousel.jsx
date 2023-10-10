@@ -1,4 +1,6 @@
-const negativeWorlds = [
+import "./Carrousel.css";
+
+const negativeWords = [
   { text: "anxiété" },
   { text: "réactivité" },
   { text: "peur" },
@@ -14,7 +16,7 @@ function Carrousel() {
   return (
     <div className="flex items-center ">
       <div className="words-slide flex">
-        {negativeWorlds.map((word) => (
+        {negativeWords.map((word) => (
           <span
             key="word.id"
             className="border-linear-gradient p-[2px] mx-1 rounded-xl"
@@ -26,7 +28,7 @@ function Carrousel() {
         ))}
       </div>
       <div className="words-slide flex">
-        {negativeWorlds.map((word) => (
+        {negativeWords.map((word) => (
           <span
             key="word.id"
             className="border-linear-gradient p-[2px] mx-1 rounded-xl"

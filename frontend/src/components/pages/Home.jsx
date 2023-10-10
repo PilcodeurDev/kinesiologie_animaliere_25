@@ -7,7 +7,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import NavbarDefault from "../NavbarDefault";
 import ElementArray from "../ElementArray";
 import HomeArticles from "../HomeArticles";
-import Carrousel from "../animation/Carrousel";
+import Carrousel from "../animation/Carrousel/Carrousel";
 
 export default function Home() {
   return (

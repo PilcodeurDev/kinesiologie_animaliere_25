@@ -23,36 +23,6 @@
   border-radius: 50%;
 }
 
-.border-linear-gradient {
-  background: linear-gradient(135deg, #ff2222 0% 50%, #ed8b02e6);
-}
-
-.word_bg {
-  background: #1f2937;
-}
-
-.word {
-  font-size: 1.5rem;
-  font-weight: bold;
-  background: -webkit-linear-gradient(60deg, #ff0404, #ed8b02e6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.words-slide {
-  white-space: nowrap;
-  animation: slide 18s linear infinite;
-}
-
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
 .about_area_3::after {
   position: absolute;
   content: "";
