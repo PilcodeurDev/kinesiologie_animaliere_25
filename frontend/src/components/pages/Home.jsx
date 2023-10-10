@@ -4,7 +4,6 @@ import alix from "../../assets/alix_cheval.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import NavbarDefault from "../NavbarDefault";
 import ElementArray from "../ElementArray";
 import HomeArticles from "../HomeArticles";
 import Carrousel from "../animation/Carrousel/Carrousel";
@@ -12,7 +11,6 @@ import Carrousel from "../animation/Carrousel/Carrousel";
 export default function Home() {
   return (
     <div>
-      <NavbarDefault />
       <div className="container mx-auto px-24">
         {/*  1er section : La banner */}
         <section>
