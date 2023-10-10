@@ -4,22 +4,23 @@ import alix from "../../assets/alix_cheval.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import ElementArray from "../ElementArray";
 import NavbarDefault from "../NavbarDefault";
+import ElementArray from "../ElementArray";
+import HomeArticles from "../HomeArticles";
+
+const negativeWorlds = [
+  { word: "anxiété" },
+  { word: "réactivité" },
+  { word: "peur" },
+  { word: "marquage" },
+  { word: "destruction" },
+  { word: "aboiement" },
+  { word: "tristesse" },
+  { word: "fatigue" },
+  { word: "protection" },
+];
 
 export default function Home() {
-  const negativeWorlds = [
-    { word: "anxiété" },
-    { word: "réactivité" },
-    { word: "peur" },
-    { word: "marquage" },
-    { word: "destruction" },
-    { word: "aboiement" },
-    { word: "tristesse" },
-    { word: "fatigue" },
-    { word: "protection" },
-  ];
-
   return (
     <div>
       <NavbarDefault />
@@ -138,6 +139,10 @@ export default function Home() {
         <section>
           <h3>L'élément de votre chien</h3>
           <ElementArray />
+        </section>
+        {/* 5eme section: article du moment */}
+        <section>
+          <HomeArticles />
         </section>
         {/* Footer  */}
       </div>
