@@ -1,0 +1,9 @@
+.bg-image {
+  background-image: url("../assets/baies.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.font-family {
+  font-family: alexBrush;
+}

@@ -13,24 +13,22 @@ import alix from "../../assets/alix_cheval.jpg";
 import ElementArray from "../ElementArray";
 import HomeArticles from "../HomeArticles";
 import Carrousel from "../animation/Carrousel/Carrousel";
+import Banner from "../Banner";
 
 export default function Home() {
   return (
     <div>
       <div className="container mx-auto px-24">
-        {/*  1er section : La banner */}
         <section>
-          <div className="banner">
-            <h1>Kinésiologie Animalière 25</h1>
-          </div>
+          <Banner />
         </section>
         {/* 2eme section : La Kinésiologie */}
         <section>
           <div>
             {/* 1er box */}
             <div className="bg-teal-600 rounded-3xl relative h-96 w-10/12 -left-10 overflow-hidden">
-              <div className="circle bg-teal-700 absolute -left-96 -top-[850px]"></div>
-              <div className=" w-3/4 border-red-700">
+              <div className="w-[1100px] h-[1000px] rounded-[50%] bg-teal-700 absolute -left-96 -top-[850px]"></div>
+              <div className="w-3/4">
                 <h3 className="flex py-12 pl-16 relative">
                   La kinésiologie animalière
                 </h3>
@@ -51,7 +49,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="circle bg-teal-700 absolute z-0 -right-96 -bottom-[850px]"></div>
+              <div className="w-[1100px] h-[1000px] rounded-[50%] bg-teal-700 absolute z-0 -right-96 -bottom-[850px]"></div>
             </div>
             {/* 2eme box */}
             <div className=" bg-gray-800 rounded-3xl relative h-60 w-10/12 left-20 -top-24 overflow-hidden z-10">
@@ -62,22 +60,22 @@ export default function Home() {
           </div>
         </section>
         {/* 3eme section: alix */}
-        <section className="about_area_3 relative">
+        <section className="bg-line relative">
           <div className="container">
             <div className="grid grid-cols-2">
-              <div className="w-96 ml-20">
-                <img src={alix} alt="alix" className="" />
+              <div className="w-96 ml-20 flex items-center">
+                <img src={alix} alt="alix" />
               </div>
               <div className=" mr-48">
-                <div className="relative z-10 bg-gray">
-                  <h3 className="sub-title pt-8 pb-4">SUR MOI</h3>
+                <div className="relative bg-gray">
+                  <h3 className="text-sm pt-8 pb-4">SUR MOI</h3>
                   <h3 className="text-3xl pb-4 w-[275px] tracking-wider ">
                     PLUS DE 12 ANS D'EXPÉRIENCE À TRAVERS UNE GAMME DIVERSIFIÉE
                     DE DOMAINES DE PSYCHOLOGIE
                   </h3>
                 </div>
-                <div className=" pl-32 pt-6">
-                  <p className=" text-xs w-[300px]">
+                <div className="pl-36 pt-6">
+                  <p className=" text-sm w-[300px]">
                     J'exerce le métier de kinésiologue animalière. Après avoir
                     exercé plusieurs années en tant qu'infirmière hospitalière,
                     je suis retournée à mes aspirations d'enfant: aider les
