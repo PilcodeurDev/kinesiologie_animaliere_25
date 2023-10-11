@@ -1,5 +1,11 @@
-import "./css/ElementArray.css";
+/**
+ * The external imports
+ */
 import { useState } from "react";
+
+/**
+ * The internal imports
+ */
 import bg_air from "../../public/assets/images/bg_elem_0.jpg";
 import bg_feu from "../../public/assets/images/bg_elem_1.jpg";
 import bg_terre from "../../public/assets/images/bg_elem_2.jpg";
@@ -65,7 +71,7 @@ function ElementArray() {
               <img
                 src={elements[index].bgImgTitle}
                 alt="élément de l'animal"
-                className="element_title"
+                className="w-full h-[100px] object-cover object-bottom"
               />
             )}
             <p className="absolute left-5 text-4xl">

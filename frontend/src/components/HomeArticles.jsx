@@ -1,4 +1,11 @@
+/**
+ * The external imports
+ */
 import { useState, useEffect } from "react";
+
+/**
+ * The internal imports
+ */
 import article_1 from "../../public/assets/images/article_1.jpg";
 import article_2 from "../../public/assets/images/article_2.jpg";
 import article_3 from "../../public/assets/images/article_3.jpg";

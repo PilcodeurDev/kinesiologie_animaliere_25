@@ -1,9 +1,15 @@
-/* eslint-disable react/no-unescaped-entities */
-import "../css/Home.css";
-import alix from "../../assets/alix_cheval.jpg";
+/**
+ * The external imports
+ */
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
+/**
+ * The internal imports
+ */
+import "../css/Home.css";
+import alix from "../../assets/alix_cheval.jpg";
 import ElementArray from "../ElementArray";
 import HomeArticles from "../HomeArticles";
 import Carrousel from "../animation/Carrousel/Carrousel";

@@ -1,7 +1,9 @@
-/* eslint-disable react/no-unescaped-entities */
-// import { Link } from "react-router-dom";
+/**
+ * The external imports
+ */
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+// import { Link } from "react-router-dom";
 
 export default function Signin() {
   function handleSubmit(e) {
