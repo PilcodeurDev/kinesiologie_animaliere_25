@@ -1,3 +1,6 @@
+/**
+ * The internal imports
+ */
 import "./Carrousel.css";
 
 const negativeWords = [

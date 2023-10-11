@@ -1,4 +1,11 @@
+/**
+ * The external imports
+ */
 import { Link } from "react-router-dom";
+
+/**
+ * The internal imports
+ */
 import logo_titre_ka25 from "../assets/logo_titre_ka25.jpg";
 
 export default function NavbarDefault() {

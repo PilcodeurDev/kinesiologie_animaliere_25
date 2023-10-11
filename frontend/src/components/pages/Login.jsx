@@ -1,5 +1,12 @@
-import "../css/App.css";
+/**
+ * The external imports
+ */
 import { Link } from "react-router-dom";
+
+/**
+ * The internal imports
+ */
+import "../css/App.css";
 
 export default function Login() {
   return (

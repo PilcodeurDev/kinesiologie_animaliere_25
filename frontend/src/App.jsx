@@ -1,5 +1,12 @@
-import "./components/css/App.css";
+/**
+ * The external imports
+ */
 import { Routes, Route } from "react-router-dom";
+
+/**
+ * The internal imports
+ */
+import "./components/css/App.css";
 import Layout from "./components/Layout";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
