@@ -4,22 +4,12 @@ import alix from "../../assets/alix_cheval.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import ElementArray from "../ElementArray";
 import NavbarDefault from "../NavbarDefault";
+import ElementArray from "../ElementArray";
+import HomeArticles from "../HomeArticles";
+import Carrousel from "../animation/Carrousel/Carrousel";
 
 export default function Home() {
-  const negativeWorlds = [
-    { word: "anxiété" },
-    { word: "réactivité" },
-    { word: "peur" },
-    { word: "marquage" },
-    { word: "destruction" },
-    { word: "aboiement" },
-    { word: "tristesse" },
-    { word: "fatigue" },
-    { word: "protection" },
-  ];
-
   return (
     <div>
       <NavbarDefault />
@@ -34,10 +24,10 @@ export default function Home() {
         <section>
           <div>
             {/* 1er box */}
-            <div className="bg-teal-600 rounded-3xl relative h-96 w-10/12 -left-10 overflow-hidden z-0">
-              <div className="circle bg-teal-700 absolute z-0 -left-96 -top-[850px]"></div>
+            <div className="bg-teal-600 rounded-3xl relative h-96 w-10/12 -left-10 overflow-hidden">
+              <div className="circle bg-teal-700 absolute -left-96 -top-[850px]"></div>
               <div className=" w-3/4 border-red-700">
-                <h3 className="flex py-12 relative z-10">
+                <h3 className="flex py-12 pl-16 relative">
                   La kinésiologie animalière
                 </h3>
                 <div className="pl-12 ml-48 text-xl">
@@ -63,29 +53,7 @@ export default function Home() {
             <div className=" bg-gray-800 rounded-3xl relative h-60 w-10/12 left-20 -top-24 overflow-hidden z-10">
               <h3 className="px-14 pt-6 relative ">TRAVAIL</h3>
               <h3 className="px-14 pb-8 relative ">SUR</h3>
-              {/* animation caroussel */}
-              <div className="flex words-slide">
-                {negativeWorlds.map((probleme) => (
-                  <span
-                    key="probleme.id"
-                    className="border-linear-gradient p-[2px] mx-1 rounded-xl"
-                  >
-                    <div className="word_bg px-7 py-2 rounded-xl">
-                      <span className="word">{probleme.word}</span>
-                    </div>
-                  </span>
-                ))}
-                {negativeWorlds.map((probleme) => (
-                  <span
-                    key="probleme.id"
-                    className="border-linear-gradient p-[2px] mx-1 rounded-xl"
-                  >
-                    <div className="word_bg px-7 py-2 rounded-xl">
-                      <span className="word">{probleme.word}</span>
-                    </div>
-                  </span>
-                ))}
-              </div>
+              <Carrousel />
             </div>
           </div>
         </section>
@@ -138,6 +106,10 @@ export default function Home() {
         <section>
           <h3>L'élément de votre chien</h3>
           <ElementArray />
+        </section>
+        {/* 5eme section: article du moment */}
+        <section>
+          <HomeArticles />
         </section>
         {/* Footer  */}
       </div>

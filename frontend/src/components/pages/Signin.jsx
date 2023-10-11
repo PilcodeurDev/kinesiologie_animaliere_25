@@ -58,7 +58,7 @@ export default function Signin() {
                     <p className="pb-2">
                       Conseils pour un mot de passe sécurisé
                     </p>
-                    {/* condition a mettre en place en fonction du state du champs passworld*/}
+                    {/* condition a mettre en place en fonction du state du champs password*/}
                     <div className="flex items-center h-6">
                       <FontAwesomeIcon
                         className="p-1 border border-lime-400 rounded-full"
