@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /**
  * The external imports
  */
@@ -12,33 +13,34 @@ import "../css/Home.css";
 import alix from "../../assets/alix_cheval.jpg";
 import ElementArray from "../ElementArray";
 import HomeArticles from "../HomeArticles";
-import Carrousel from "../animation/Carrousel/Carrousel";
+import NegativesWordsCarrousel from "../animation/Carrousel/NegativesWordsCarrousel";
 import Banner from "../Banner";
 
 export default function Home() {
   return (
     <div>
-      <div className="container mx-auto px-24">
+      <div className="mx-auto">
         <section>
+          {/* 1ere section : Banner */}
           <Banner />
         </section>
-        {/* 2eme section : La Kinésiologie */}
-        <section>
-          <div>
+        <section className="bg-secondary">
+          {/* 2eme section : La Kinésiologie */}
+          <div className="container mx-auto">
             {/* 1er box */}
             <div className="bg-teal-600 rounded-3xl relative h-96 w-10/12 -left-10 overflow-hidden">
               <div className="w-[1100px] h-[1000px] rounded-[50%] bg-teal-700 absolute -left-96 -top-[850px]"></div>
               <div className="w-3/4">
-                <h3 className="flex py-12 pl-16 relative">
+                <h3 className="flex py-12 pl-16 relative text-white">
                   La kinésiologie animalière
                 </h3>
-                <div className="pl-12 ml-48 text-xl">
+                <div className="pl-12 ml-48 text-xl text-white">
                   Retrouver l'harmonie intérieure de votre animal grâce à la
                   libération émotionelle en profondeur.
                 </div>
                 <div className="absolute right-16 bottom-28 z-10">
                   <Link
-                    className=" relative px-4 py-2 border rounded-full text-sm right-0  hover:border-2 hover:ring-inset hover:font-black"
+                    className=" relative px-4 py-2 border rounded-full text-sm right-0 text-white hover:border-2 hover:ring-inset hover:font-black"
                     to="/la_kinésiologie"
                   >
                     En savoir plus
@@ -53,21 +55,21 @@ export default function Home() {
             </div>
             {/* 2eme box */}
             <div className=" bg-gray-800 rounded-3xl relative h-60 w-10/12 left-20 -top-24 overflow-hidden z-10">
-              <h3 className="px-14 pt-6 relative ">TRAVAIL</h3>
-              <h3 className="px-14 pb-8 relative ">SUR</h3>
-              <Carrousel />
+              <h3 className="px-14 pt-6 relative text-white">TRAVAIL</h3>
+              <h3 className="px-14 pb-8 relative text-white">SUR</h3>
+              <NegativesWordsCarrousel />
             </div>
           </div>
         </section>
-        {/* 3eme section: alix */}
         <section className="bg-line relative">
-          <div className="container">
+          {/* 3eme section: alix */}
+          <div className="container mx-auto">
             <div className="grid grid-cols-2">
-              <div className="w-96 ml-20 flex items-center">
+              <div className="w-96 ml-40 flex items-center">
                 <img src={alix} alt="alix" />
               </div>
-              <div className=" mr-48">
-                <div className="relative bg-gray">
+              <div className="ml-6">
+                <div className="relative bg-gray z-10">
                   <h3 className="text-sm pt-8 pb-4">SUR MOI</h3>
                   <h3 className="text-3xl pb-4 w-[275px] tracking-wider ">
                     PLUS DE 12 ANS D'EXPÉRIENCE À TRAVERS UNE GAMME DIVERSIFIÉE
@@ -104,13 +106,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* 4eme section: element de votre animal */}
-        <section>
-          <h3>L'élément de votre chien</h3>
+        <section className="bg-secondary">
+          {/* 4eme section: element de votre animal */}
           <ElementArray />
         </section>
-        {/* 5eme section: article du moment */}
-        <section>
+        <section className="bg-line relative pt-2 ">
+          {/* 5eme section: article du moment */}
           <HomeArticles />
         </section>
         {/* Footer  */}

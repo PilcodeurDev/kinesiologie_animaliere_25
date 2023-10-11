@@ -29,7 +29,9 @@ export default function NavbarDefault() {
           <p className="px-3">Blog</p>
         </div>
         <button className="h-8 px-4 rounded-full bg-gradient-to-r from-emerald-500 to-teal-800 ">
-          <Link to="/login">Se Connecter</Link>
+          <Link to="/login" className="text-white">
+            Se Connecter
+          </Link>
         </button>
       </div>
     </header>

@@ -58,35 +58,38 @@ function ElementArray() {
   const handleMouseOut = () => setHoveredElementIndex(null);
 
   return (
-    <div className="grid grid-cols-2 mt-20 h-[500px]">
-      <div className="relative flex flex-col w-full">
-        {elements.map((element, index) => (
-          <div
-            className="basis-1/5 w-full flex items-center"
-            key={index}
-            onMouseOver={() => handleMouseOver(index)}
-            onMouseOut={handleMouseOut}
-          >
-            {hoveredElementIndex === index && (
-              <img
-                src={elements[index].bgImgTitle}
-                alt="élément de l'animal"
-                className="w-full h-[100px] object-cover object-bottom"
-              />
-            )}
-            <p className="absolute left-5 text-4xl">
-              {elements[index].name.toUpperCase()}
-            </p>
-          </div>
-        ))}
-      </div>
-      {hoveredElementIndex !== null && (
-        <div className="w-full bg-slate-900">
-          <div className=" pt-24 w-[80%] text-base/9 ">
-            <p>{elements[hoveredElementIndex].texte}</p>
-          </div>
+    <div className="container mx-auto">
+      <h2>L'élément de votre chien</h2>
+      <div className="grid grid-cols-2 mt-20 h-[500px]">
+        <div className="relative flex flex-col w-full">
+          {elements.map((element, index) => (
+            <div
+              className="basis-1/5 w-full flex items-center"
+              key={index}
+              onMouseOver={() => handleMouseOver(index)}
+              onMouseOut={handleMouseOut}
+            >
+              {hoveredElementIndex === index && (
+                <img
+                  src={elements[index].bgImgTitle}
+                  alt="élément de l'animal"
+                  className="w-full h-[100px] object-cover object-bottom"
+                />
+              )}
+              <p className="absolute left-5 text-4xl">
+                {elements[index].name.toUpperCase()}
+              </p>
+            </div>
+          ))}
         </div>
-      )}
+        {hoveredElementIndex !== null && (
+          <div className="w-full bg-slate-900">
+            <div className=" pt-24 w-[80%] text-base/9 ">
+              <p>{elements[hoveredElementIndex].texte}</p>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

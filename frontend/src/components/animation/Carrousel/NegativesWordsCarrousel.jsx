@@ -1,7 +1,7 @@
 /**
  * The internal imports
  */
-import "./Carrousel.css";
+import "./NegativesWordsCarrousel.css";
 
 const negativeWords = [
   { text: "anxiété" },
@@ -15,13 +15,13 @@ const negativeWords = [
   { text: "protection" },
 ];
 
-function Carrousel() {
+function NegativesWordsCarrousel() {
   return (
     <div className="flex items-center ">
-      <div className="words-slide flex">
+      <div className="slider-word flex">
         {negativeWords.map((word) => (
           <span
-            key="word.id"
+            key={word.id}
             className="border-linear-gradient p-[2px] mx-1 rounded-xl"
           >
             <div className="word_bg px-7 py-2 rounded-xl">
@@ -30,10 +30,10 @@ function Carrousel() {
           </span>
         ))}
       </div>
-      <div className="words-slide flex">
+      <div className="slider-word flex">
         {negativeWords.map((word) => (
           <span
-            key="word.id"
+            key={word.id}
             className="border-linear-gradient p-[2px] mx-1 rounded-xl"
           >
             <div className="word_bg px-7 py-2 rounded-xl">
@@ -45,4 +45,4 @@ function Carrousel() {
     </div>
   );
 }
-export default Carrousel;
+export default NegativesWordsCarrousel;
