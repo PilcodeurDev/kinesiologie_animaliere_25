@@ -52,6 +52,16 @@ const articlesData = [
   },
 ];
 
+function renderArticleCards(articles, scrollDirection) {
+  return (
+    <div className={`flex ${scrollDirection}`}>
+      {articles.map((article) => (
+        <ArticleCard key={article.id} article={article} />
+      ))}
+    </div>
+  );
+}
+
 function ArticlesCarrousel(props) {
   const scrollDirection = props.fromLeftToRight
     ? "slider-article"
@@ -61,16 +71,8 @@ function ArticlesCarrousel(props) {
 
   return (
     <div className="flex items-center">
-      <div className={`flex ${scrollDirection}`}>
-        {articlesData.map((article) => (
-          <ArticleCard key={article.id} article={article} />
-        ))}
-      </div>
-      <div className={`flex ${scrollDirection}`}>
-        {articlesData.map((article) => (
-          <ArticleCard key={article.id} article={article} />
-        ))}
-      </div>
+      {renderArticleCards(articlesData, scrollDirection)}
+      {renderArticleCards(articlesData, scrollDirection)}
     </div>
   );
 }
