@@ -1,10 +1,10 @@
-#🐱🐴 Kinésiologie Animalière 25 🐮🐶
+# 🐱🐴 Kinésiologie Animalière 25 🐮🐶
 
 
 ## About us
 
 KInésiologie Animalière 25 is a real professional project for a patient client.
-It is a project that is manufactured by Sonia and Pilcodeurdev with a frontend language and backend in order to master the techniques of modern business work but also the tools of React and Django.
+It is a project that is manufactured by  [SoniaBisinger](https://github.com/SoniaBisinger) and [Pilcodeurdev](https://github.com/PilcodeurDev) with a backend end frontend language in order to master the techniques of modern business work but also the tools of React and Django.
 
 ## features
 
