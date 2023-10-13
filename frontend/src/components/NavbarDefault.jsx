@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 /**
  * The internal imports
  */
-import logo_titre_ka25 from "../assets/logo_titre_ka25.jpg";
+import { logotexte } from "../assets";
 
 export default function NavbarDefault() {
   return (
@@ -14,7 +14,7 @@ export default function NavbarDefault() {
       <div className="flex">
         <Link to="/">
           <img
-            src={logo_titre_ka25}
+            src={logotexte}
             alt="logo et titre kinésiologie Animalière 25"
             className=""
           />

@@ -10,7 +10,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
  * The internal imports
  */
 import "../css/Home.css";
-import alix from "../../assets/alix_cheval.jpg";
+import { alix } from "../../assets";
 import ElementArray from "../ElementArray";
 import HomeArticles from "../HomeArticles";
 import NegativesWordsCarrousel from "../animation/Carrousel/NegativesWordsCarrousel";

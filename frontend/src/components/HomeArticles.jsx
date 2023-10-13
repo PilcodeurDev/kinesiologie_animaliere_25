@@ -1,4 +1,8 @@
 /**
+ * The external imports
+ */
+
+/**
  * The internal imports
  */
 import ArticlesCarrousel from "./animation/Carrousel/ArticlesCarrousel";
@@ -13,6 +17,7 @@ function HomeArticles() {
       <ArticlesCarrousel fromLeftToRight={fromLeftToRight} />
       <div className="h-10"></div>
       <ArticlesCarrousel fromRightToLeft={fromRightToLeft} />
+      <div className="absolute right-[530px]"></div>
     </div>
   );
 }
