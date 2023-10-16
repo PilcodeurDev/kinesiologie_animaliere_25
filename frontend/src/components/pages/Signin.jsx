@@ -165,7 +165,7 @@ export default function Signin() {
                 />
                 <button
                   type="submit"
-                  className="my-14 w-full h-9 rounded bg-gradient-to-r from-emerald-500 to-teal-800 font-bold"
+                  className="my-14 w-full h-9 rounded bg-gradient-to-r from-emerald-500 to-teal-800 font-bold text-white"
                 >
                   S'inscrire
                 </button>
