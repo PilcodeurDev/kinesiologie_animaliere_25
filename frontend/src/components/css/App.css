@@ -12,7 +12,7 @@
 
 body {
   background: #1c1e22;
-  color: #ffffff;
+  color: #8c8c8c;
   font-family: roboto;
 }
 
@@ -56,16 +56,28 @@ h3 {
   src: url(../../../public/assets/font-family/RobotoSlab-Regular.ttf);
 }
 
-.bg-gray {
-  background-color: #1c1e22;
-}
-
 .font-bold {
   font-family: roboto-bold;
+}
+
+.text-xxs {
+  font-size: 11px;
+}
+
+.text-3xs {
+  font-size: 9px;
 }
 
 .lien {
   font-style: italic;
   color: rgb(30, 95, 218);
   text-decoration: underline;
+}
+
+.bg-gray {
+  background-color: #1c1e22;
+}
+
+.bg-secondary {
+  background-color: #171717;
 }

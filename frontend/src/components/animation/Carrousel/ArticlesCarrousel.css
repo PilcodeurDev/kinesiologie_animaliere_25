@@ -1,0 +1,25 @@
+.slider-article {
+  animation: slide 30s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-article-invers {
+  animation: slide-invers 40s linear infinite;
+}
+
+@keyframes slide-invers {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 /**
  * The internal imports
  */
-import logo_titre_ka25 from "../assets/logo_titre_ka25.jpg";
+import { logotexte } from "../assets";
 
 export default function NavbarDefault() {
   return (
@@ -14,7 +14,7 @@ export default function NavbarDefault() {
       <div className="flex">
         <Link to="/">
           <img
-            src={logo_titre_ka25}
+            src={logotexte}
             alt="logo et titre kinésiologie Animalière 25"
             className=""
           />
@@ -29,7 +29,9 @@ export default function NavbarDefault() {
           <p className="px-3">Blog</p>
         </div>
         <button className="h-8 px-4 rounded-full bg-gradient-to-r from-emerald-500 to-teal-800 ">
-          <Link to="/login">Se Connecter</Link>
+          <Link to="/login" className="text-white">
+            Se Connecter
+          </Link>
         </button>
       </div>
     </header>
