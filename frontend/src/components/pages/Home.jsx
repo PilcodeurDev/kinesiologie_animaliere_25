@@ -15,6 +15,7 @@ import ElementArray from "../ElementArray";
 import HomeArticles from "../HomeArticles";
 import NegativesWordsCarrousel from "../animation/Carrousel/NegativesWordsCarrousel";
 import Banner from "../Banner";
+import ReviewsGoogle from "../ReviewsGoogle";
 
 export default function Home() {
   return (
@@ -114,6 +115,9 @@ export default function Home() {
           {/* 5eme section: article du moment */}
           <HomeArticles />
         </section>
+        {/* <section className="bg-secondary">
+          <ReviewsGoogle />
+        </section> */}
         {/* Footer  */}
       </div>
     </div>
